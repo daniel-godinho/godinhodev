@@ -6,19 +6,46 @@
   font-display: swap;
 }
 
+:root {
+  /* Colors */
+  --color-brand: #5b2a86;
+  --color-text: #101010;
+  --color-bg: #f4f4f4;
+  --color-surface: rgb(239, 238, 238);
+  --color-nav-bg: rgba(250, 250, 252, 0.92);
+  --color-border: rgba(0, 0, 0, 0.1);
+  --color-icon-hover: #d5b110;
+  --color-btn-hover-bg: black;
+  --color-dot: rgb(109, 203, 65);
+
+  /* Typography */
+  --font-main: 'ClashDisplay', sans-serif;
+  --font-size-base: 16px;
+
+  /* Border Radius */
+  --radius-pill: 25px;
+  --radius-btn: 20px;
+
+  /* Shadows */
+  --shadow-soft: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  --shadow-nav: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+  /* Transitions */
+  --transition-default: all 0.2s ease;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-ul,
-ol {
+ul, ol {
   list-style: none;
 }
 
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  background: #f4f4f4;
+  background: var(--color-bg);
 }
