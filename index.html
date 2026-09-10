@@ -4,14 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Godinho Dev</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
     <header>
       <nav class="mainNav" aria-label="Cabeçalho de Navegação">
         <div class="logo">
-          <a href="#" class="brand" aria-label="Godinho Dev - Inicio">GODINHO.DEV</a>   
+          <a href="#" class="brand" aria-label="Godinho Dev - Inicio">GODINHO.DEV</a>
         </div>
 
         <div class="navbarLinks">
@@ -26,8 +25,32 @@
 
         <div class="nav-controls">
           <button class="icon-btn" type="button" aria-label="Alterar para modo claro/escuro">
-            <span class="theme-icon" aria-hidden="true"></span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-sun-medium"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path d="M12 3v1" />
+              <path d="M12 20v1" />
+              <path d="M3 12h1" />
+              <path d="M20 12h1" />
+              <path d="m18.364 5.636-.707.707" />
+              <path d="m6.343 17.657-.707.707" />
+              <path d="m5.636 5.636.707.707" />
+              <path d="m17.657 17.657.707.707" />
+            </svg>
           </button>
+
+          <div class="status-badge">
+            <span class="dot"></span>
+            <span class="nav-status">Open to Work</span>
+          </div>
         </div>
       </nav>
     </header>
