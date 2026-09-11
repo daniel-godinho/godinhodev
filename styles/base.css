@@ -32,6 +32,7 @@
   /* Shadows */
   --shadow-soft: 0px 0px 10px rgba(0, 0, 0, 0.2);
   --shadow-nav: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  --shadow-glass: 0 8px 32px 0 rgba(0,0,0,0.37);
 
   /* Transitions */
   --transition-default: all 0.2s ease;
