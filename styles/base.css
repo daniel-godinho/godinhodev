@@ -7,8 +7,15 @@
 }
 
 :root {
+  /* Typography */
+  --font-main: 'ClashDisplay', sans-serif;
+  --font-size-badge: 12px;
+  --font-size-body: 16px;
+  --font-size-brand: 20px;
+  --font-size-title: clamp(40px, 6vw, 72px);
+  
   /* Colors */
-  --color-brand: #5b2a86;
+  --color-highlight: #5b2a86;
   --color-text: #101010;
   --color-bg: #f4f4f4;
   --color-surface: rgb(239, 238, 238);
@@ -16,11 +23,7 @@
   --color-border: rgba(0, 0, 0, 0.1);
   --color-icon-hover: #d5b110;
   --color-btn-hover-bg: black;
-  --color-dot: rgb(109, 203, 65);
-
-  /* Typography */
-  --font-main: 'ClashDisplay', sans-serif;
-  --font-size-base: 16px;
+  --color-dot-ow: rgb(109, 203, 65);
 
   /* Border Radius */
   --radius-pill: 25px;
