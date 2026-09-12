@@ -52,7 +52,7 @@
   margin-top: 24px;
 
   .tech-tags {
-    font-size: var(--font-badge);
+    font-size: var(--font-size-badge);
     font-weight: 600;
     letter-spacing: 0.5px;
     padding: 8px 16px;
@@ -80,6 +80,105 @@
   grid-template-columns: 1fr 1fr;
   gap: 2px;
   background: var(--text-color);
+  border: 1.5px solid black;
   border-radius: var(--radius-pill);
   overflow: hidden;
+}
+
+.study-info {
+  color: var(--color-text);
+  padding: 12px;
+  
+  .study-header {
+    font-size: var(--font-size-badge);
+    opacity: .45;
+    margin-bottom: 10px;
+  }
+  
+  .study-number {
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--color-highlight);
+    line-height: 1;
+  }
+  
+  .about-label {
+    font-size: 10px;
+    letter-spacing: 10px;
+    opacity: .55;
+    margin-top: 8px;
+  }
+}
+
+.project-info {
+  color: var(--color-text);
+  padding: 22px;
+  
+  .project-header {
+    font-size: var(--font-size-badge);
+    opacity: .45;
+    margin-bottom: 10px;
+  }
+  
+  .project-number {
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--color-highlight);
+    line-height: 1;
+  }
+  
+  .project-label {
+    font-size: 10px;
+    letter-spacing: 10px;
+    opacity: .55;
+    margin-top: 8px;
+  }
+}
+
+.stacks-info {
+  color: var(--color-text);
+  padding: 22px;
+  
+  .stacks-header {
+    font-size: var(--font-size-badge);
+    opacity: .45;
+    margin-bottom: 10px;
+  }
+  
+  .stacks-number {
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--color-highlight);
+    line-height: 1;
+  }
+  
+  .stacks-label {
+    font-size: 10px;
+    letter-spacing: 10px;
+    opacity: .55;
+    margin-top: 8px;
+  }
+}
+
+.node-info {
+  color: var(--color-text);
+  padding: 22px;
+  
+  .node-header {
+    font-size: var(--font-size-badge);
+    opacity: .45;
+    margin-bottom: 10px;
+  }
+  
+  .node-number {
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--color-highlight);
+  }
+  
+  .node-label {
+    font-size: 10px;
+    opacity: .55;
+    margin-top: 8px;
+  }
 }
