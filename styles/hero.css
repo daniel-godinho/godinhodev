@@ -125,20 +125,30 @@
   pointer-events: none;
 }
 
-.hero-shape .shape {
+.hero-shape .shape img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.shape-1 img {
   position: absolute;
   display: block;
   width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  height: 300px;
+  
+  background: radial-gradient(ellipse at 50% 100%, #7c3aed, transparent);
+  
+  mask-image: url('../assets/img/Shapes/shape-wave1.svg');
+  -webkit-mask-image: url('../assets/img/Shapes/shape-wave1.svg');
+  mask-size: cover;
+  mask-repeat: no-repeat;
+  
+  backdrop-filter: blur(40px);
+ 
 }
 
-.shape-1 {
-  background-image: url('../assets/img/Shapes/curveNegative-1.svg');
-  
-}
 
 /* Imgs do Hero */
 .hero-img {
@@ -150,7 +160,7 @@
   object-fit: contain;
 }
 
-img {
+.memoji-hero img {
   width: 80px;
   height: 80px;
 }
