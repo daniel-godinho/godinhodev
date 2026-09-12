@@ -1,0 +1,118 @@
+/* Estilização do Header */
+.mainNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 80px;
+  padding: 20px 40px;
+  gap: 20px;
+  top: 0;
+  position: sticky;
+  z-index: 100;
+  background: var(--color-nav-bg);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  box-shadow: var(--shadow-soft);
+}
+
+.brand {
+  font-family: var(--font-main);
+  font-weight: 700;
+  font-size: var(--font-size-brand);
+  text-decoration: none;
+  color: var(--color-highlight);
+}
+
+.navbarLinks {
+  align-self: center;
+
+  ul {
+    display: flex;
+    gap: 30px;
+    background: var(--color-surface);
+    padding: 10px 20px;
+    border-radius: var(--radius-pill);
+    box-shadow: var(--shadow-soft);
+
+    a {
+      display: inline-block;
+      font-family: var(--font-main);
+      font-weight: 500;
+      color: var(--color-text);
+      text-decoration: none;
+      cursor: pointer;
+      transition: var(--transition-default);
+    }
+
+    a:hover {
+      transform: translateY(-2px);
+      color: var(--color-highlight);
+      opacity: 0.9;
+    }
+  }
+}
+
+.nav-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  .icon-btn svg {
+    width: 20px;
+    height: auto;
+    stroke: currentColor;
+    stroke-width: 2;
+    transition: var(--transition-default);
+  }
+
+  .icon-btn:hover svg {
+    stroke: var(--color-icon-hover);
+    transform: rotate(20deg);
+  }
+}
+
+.icon-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  padding: 5px 10px;
+  border-radius: var(--radius-btn);
+  border: 1px solid var(--color-border);
+}
+
+.icon-btn:hover {
+  background: black;
+}
+
+.status-badge {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  gap: 5px;
+  border-radius: var(--radius-btn);
+  border: 1px solid var(--color-border);
+  transition: var(--transition-default);
+
+  .nav-status {
+    font-family: var(--font-main);
+    font-weight: 500;
+    font-size: var(--font-size-badge);
+  }
+
+  .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--color-dot-ow);
+    box-shadow: var(--shadow-soft);
+  }
+}
+
+.status-badge:hover {
+  cursor: pointer;
+  transform: translateY(-2px);
+}
