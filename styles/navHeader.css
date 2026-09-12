@@ -1,5 +1,5 @@
 /* Estilização do Header */
-.header {
+header {
   position: sticky;
   top: 0;
   z-index: 100;
@@ -13,12 +13,9 @@
   height: 80px;
   padding: 20px 40px;
   gap: 20px;
-  top: 0;
-  position: sticky;
-  z-index: 100;
   background: var(--color-nav-bg);
-  backdrop-filter: saturate(180%) blur(20px);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(15px);
+  -webkit-backdrop-filter: saturate(180%) blur(15px);
   box-shadow: var(--shadow-soft);
 }
 
