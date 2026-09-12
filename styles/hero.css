@@ -20,6 +20,7 @@
 
 .hero-content {
   width: 100%;
+  position: relative;
   z-index: 20;
 }
 
@@ -181,7 +182,7 @@
   position: relative;
   width: 550px;
   height: 550px;
-  bottom: 100px;
+  bottom: 80px;
 }
 
 .memoji-sharp {
