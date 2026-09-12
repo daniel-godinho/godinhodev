@@ -25,7 +25,6 @@
 }
 
 .hero-badge {
-  font-family: var(--font-main);
   font-size: var(--font-size-badge);
   font-weight: 400;
   text-transform: capitalize;
@@ -35,12 +34,16 @@
 }
 
 .hero-title {
-  font-family: var(--font-main);
   font-size: var(--font-size-title);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: -0.5px;
   line-height: 0.97;
+  
+  .hero-title h1 {
+    border: 1px solid black;
+    box-shadow: var(--shadow-soft);
+  }
 }
 
 .highlight {
@@ -48,7 +51,6 @@
 }
 
 .hero-lead {
-  font-family: var(--font-main);
   font-size: var(--font-size-body);
   font-weight: 500;
   line-height: 1.75;
@@ -66,7 +68,6 @@
 
 .btn {
   display: inline-block;
-  font-family: var(--font-main);
   font-size: var(--font-size-badge);
   font-weight: 600;
   line-height: 1.5;

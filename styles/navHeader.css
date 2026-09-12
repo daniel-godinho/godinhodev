@@ -23,7 +23,6 @@
 }
 
 .brand {
-  font-family: var(--font-main);
   font-weight: 700;
   font-size: var(--font-size-brand);
   text-decoration: none;
@@ -43,7 +42,6 @@
 
     a {
       display: inline-block;
-      font-family: var(--font-main);
       font-weight: 500;
       color: var(--color-text);
       text-decoration: none;
@@ -104,7 +102,6 @@
   transition: var(--transition-default);
 
   .nav-status {
-    font-family: var(--font-main);
     font-weight: 500;
     font-size: var(--font-size-badge);
   }
