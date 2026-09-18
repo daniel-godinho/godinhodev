@@ -1,5 +1,5 @@
 .projects-wrapper {
-  background: var(--color-bg); /* Cor Provisoria */
+  background: var(--color-bg);
   color: var(--color-text);
   padding-top: 60px;
 }
@@ -41,7 +41,7 @@
 }
 
 .filter-chip:hover {
-  background: rgba(91, 42, 134, .9);
+  background: rgba(91, 42, 134, 0.9);
   color: var(--color-surface);
   position: relative;
   transform: translateY(-5px);
@@ -50,9 +50,65 @@
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2px;
-  background: var(--color-highlight); /* Cor Provisoria */
+  gap: 8px;
   perspective: 1200px;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.project {
+  position: relative;
+  background: var(--color-surface);
+  padding: 30px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--radius-pill);
+  transform-style: preserve-3d;
+  transition: var(--transition-default);
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.projects-stack {
+  font-size: var(--font-size-badge);
+  letter-spacing: 0.5;
+  opacity: 0.7;
+}
+
+.project-tag {
+  font-size: 10px;
+  letter-spacing: 1px;
+  background-color: var(--color-text);
+  border-radius: 8px;
+  padding: 4px 12px;
+  color: white;
+  white-space: nowrap;
+  transition: var(--transition-default);
+}
+
+.project-title {
+  font-size: 30px;
+  letter-spacing: 0;
+  font-weight: 600;
+}
+
+.project-desc {
+  font-size: 14px;
+  line-height: var(--lh-body);
+  opacity: .85;
+}
+
+.project-link, .project-link a {
+  font-size: 11.5px;
+  margin-top: 4px;
+  background: var(--color-text);
+  padding: var(--btn-padding);
+  border-radius: var(--radius-btn);
+  color: white;
+  text-decoration: none;
 }

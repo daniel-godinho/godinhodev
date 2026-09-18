@@ -43,6 +43,7 @@
 
   /* Effects */
 
+  --glass-blur: blur(10px);
   --glass-bg: rgba(130, 129, 131, 0.21);
   --glass-border: 1px solid rgba(255, 255, 255, 0.3);
   --glass-shadow:
