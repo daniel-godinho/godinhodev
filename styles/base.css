@@ -9,17 +9,18 @@
 :root {
   /* Typography */
   --font-main: 'ClashDisplay', sans-serif;
+  --font-size-small: 10px;
   --font-size-badge: 12px;
   --font-size-body: 16px;
   --font-size-brand: 20px;
   --font-size-title: clamp(40px, 6vw, 72px);
-  
+
   /* Colors */
   --color-highlight: #5b2a86;
   --color-text: #101010;
   --color-bg: #f4f4f4;
   --color-surface: rgb(239, 238, 238);
-  --color-nav-bg: rgba(250, 250, 252, .5);
+  --color-nav-bg: rgba(250, 250, 252, 0.5);
   --color-border: rgba(0, 0, 0, 0.1);
   --color-icon-hover: #d5b110;
   --color-btn-hover-bg: black;
@@ -32,7 +33,15 @@
   /* Shadows */
   --shadow-soft: 0px 0px 10px rgba(0, 0, 0, 0.2);
   --shadow-nav: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  --shadow-glass: 0 8px 32px 0 rgba(0,0,0,0.37);
+  --shadow-glass: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+  /* Effects */
+
+  --glass-bg: rgba(130, 129, 131, 0.21);
+  --glass-border: 1px solid rgba(255, 255, 255, 0.3);
+  --glass-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.4), inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 0 14px 7px rgba(255, 255, 255, 0.2);
 
   /* Transitions */
   --transition-default: all 0.2s ease;
@@ -44,7 +53,8 @@
   padding: 0;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -53,4 +63,9 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   background: var(--color-bg);
+}
+
+.section-inner {
+  max-width: 1200px;
+  margin: 0 auto;
 }
