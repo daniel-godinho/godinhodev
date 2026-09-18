@@ -14,6 +14,8 @@
   --font-size-body: 16px;
   --font-size-brand: 20px;
   --font-size-title: clamp(40px, 6vw, 72px);
+  --lh-tight: 0.97;
+  --lh-body: 1.75;
 
   /* Colors */
   --color-highlight: #5b2a86;
@@ -30,6 +32,10 @@
   --radius-pill: 25px;
   --radius-btn: 20px;
 
+  /* Spacing */
+  
+  --btn-padding: 8px 16px;
+  
   /* Shadows */
   --shadow-soft: 0px 0px 10px rgba(0, 0, 0, 0.2);
   --shadow-nav: 0px 4px 10px rgba(0, 0, 0, 0.1);

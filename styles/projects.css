@@ -1,7 +1,58 @@
-#projects {
-  background: var(--color-highlight); /* Cor Provisoria */
-  color: var(--text-color);
+.projects-wrapper {
+  background: var(--color-bg); /* Cor Provisoria */
+  color: var(--color-text);
   padding-top: 60px;
 }
 
+.projects-wrapper h2 {
+  font-size: var(--font-size-title);
+  line-height: var(--lh-tight);
+  letter-spacing: 1;
+}
 
+.description {
+  font-size: var(--font-size-body);
+  line-height: 1.8;
+  opacity: 0.7;
+  max-width: 600px;
+  margin-top: 20px;
+}
+
+.filters-pill {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 30px 0;
+}
+
+.filter-chip {
+  font-size: var(--font-size-badge);
+  font-weight: 700;
+
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: var(--glass-border);
+  border-radius: var(--radius-btn);
+  box-shadow: var(--glass-shadow);
+  padding: var(--btn-padding);
+  cursor: pointer;
+  transition: var(--transition-default);
+}
+
+.filter-chip:hover {
+  background: rgba(91, 42, 134, .9);
+  color: var(--color-surface);
+  position: relative;
+  transform: translateY(-5px);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2px;
+  background: var(--color-highlight); /* Cor Provisoria */
+  perspective: 1200px;
+  max-width: 1200px;
+  margin: 0 auto;
+}

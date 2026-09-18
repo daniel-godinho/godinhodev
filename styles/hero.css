@@ -38,7 +38,7 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: -0.5px;
-  line-height: 0.97;
+  line-height: var(--lh-tight);
 }
 
 .highlight {
@@ -48,7 +48,7 @@
 .hero-lead {
   font-size: var(--font-size-body);
   font-weight: 500;
-  line-height: 1.75;
+  line-height: var(--lh-body);
   opacity: 0.75;
   max-width: 460px;
   margin-top: 22px;
