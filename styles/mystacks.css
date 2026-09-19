@@ -15,7 +15,7 @@
   font-size: 20px;
   font-weight: 500;
   line-height: 1.8;
-  opacity: .7;
+  opacity: 0.7;
   margin-bottom: 50px;
 }
 
@@ -23,21 +23,67 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
   margin: 0;
 }
 
 .bento-box {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 180px;
-  gap: 16px;
-  width: 800px;
-  max-width: 100%;
+  grid-auto-rows: 150px;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
   padding: 20px;
 }
 
 .bento-stack {
   background: var(--color-surface);
   border-radius: var(--radius-pill);
+  padding: 20px;
+  box-shadow: var(--shadow-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-default);
+}
+
+.bento-stack:hover {
+  position: relative;
+  transform: scale(1.03);
+}
+
+.stack-1 {
+  grid-column: span 2;
+  grid-row: span 2;
+  background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+}
+
+.stack-2 {
+  grid-column: span 1;
+  grid-row: span 2;
+  background: linear-gradient(135deg, #0840a8 0%, #fad0c4 100%);
+}
+
+.stack-3 {
+  grid-column: span 3;
+  grid-row: span 1;
+  background: linear-gradient(135deg, #0840a8 0%, #0d6dbc 100%);
+}
+
+.stack-4 {
+  grid-column: span 1;
+  grid-row: span 2;
+  background: linear-gradient(135deg, #0cd44f 0%, #0d6dbc 100%);
+}
+
+.stack-5 {
+  grid-column: span 1;
+  grid-row: span 1;
+  background: linear-gradient(135deg, #0cd44f 0%, #0d6dbc 100%);
+}
+
+.stack-6 {
+  grid-column: span 1;
+  grid-row: span 2;
+  background: linear-gradient(135deg, #0cd44f 0%, #0d6dbc 100%);
 }
