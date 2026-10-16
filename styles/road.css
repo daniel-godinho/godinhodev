@@ -1,0 +1,38 @@
+.road-title {
+  font-size: var(--font-size-title);
+  font-weight: 700;
+  padding: 20px;
+}
+
+.trajectory {
+  max-width: 800px;
+  margin-bottom: 24px;
+}
+
+.traj-item {
+  position: relative;
+  padding-left: 22px;
+  padding-bottom: 34px;
+  border-left: 15px solid rgb(40, 40, 40);
+}
+
+.traj-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -8.5px;
+  width: 2px;
+  background: repeating-linear-gradient(
+    to bottom,
+    #d9b24c 0 14px,
+    transparent 14px 28px
+  );
+}
+
+.traj-date {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
