@@ -1,6 +1,7 @@
 .road-title {
   font-size: var(--font-size-title);
   font-weight: 700;
+  max-width: 760px;
   padding: 20px;
 }
 
@@ -31,8 +32,23 @@
 }
 
 .traj-date {
-  font-size: 15px;
-  font-weight: 700;
+  font-size: 12px;
+  font-weight: 600;
   letter-spacing: 1px;
   margin-bottom: 6px;
+}
+
+.traj-title {
+  font-family: 'Literata';
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  letter-spacing: 1px;
+}
+
+.traj-desc {
+  font-size: 13px;
+  line-height: 1.75;
+  opacity: .65;
+  max-width: 520px;
 }
