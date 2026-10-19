@@ -1,9 +1,14 @@
+.road {
+  padding: 60px 40px;
+  margin: 0 auto;
+}
+
 .road-title {
   font-size: var(--font-size-title);
   font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: -.5px;
-  line-height: .97;
+  letter-spacing: -0.5px;
+  line-height: 0.97;
   padding: 20px;
   margin-bottom: 20px;
 }
@@ -21,17 +26,13 @@
 }
 
 .traj-item::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   bottom: 0;
   left: -8.5px;
   width: 2px;
-  background: repeating-linear-gradient(
-    to bottom,
-    #d9b24c 0 14px,
-    transparent 14px 28px
-  );
+  background: repeating-linear-gradient(to bottom, #d9b24c 0 14px, transparent 14px 28px);
 }
 
 .traj-date {
@@ -52,6 +53,6 @@
 .traj-desc {
   font-size: 16px;
   line-height: 1.75;
-  opacity: .65;
+  opacity: 0.65;
   max-width: 520px;
 }

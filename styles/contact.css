@@ -1,0 +1,68 @@
+.contact {
+  padding: 60px 40px;
+  margin: 0 auto;
+}
+
+.contact-heading {
+  font-size: var(--font-size-title);
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  line-height: var(--lh-tight);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 60px;
+  padding: 60px 0;
+}
+
+.contact-left p {
+  font-size: 16px;
+  line-height: 1.8;
+  opacity: .75;
+  max-width: 380px;
+}
+
+.social-medias a {
+  display: block;
+  margin-top: 10px;
+  font-size: 13px;
+  text-decoration: none;
+  opacity: .75;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.field label {
+  font-size: 11px;
+  letter-spacing: 1px;
+  opacity: .6;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.field input, textarea {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1.5px solid var(--color-highlight);
+  padding: 10px 0;
+  font-size: 14px;
+  color: var(--color-text);
+}
+
+.btn-fill {
+  display: inline-block;
+  font-size: var(--font-size-badge);
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--color-text);
+  letter-spacing: 1.5px;
+  padding: 14px 22px;
+  text-decoration: none;
+}
