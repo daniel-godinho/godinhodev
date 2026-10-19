@@ -1,8 +1,11 @@
 .road-title {
   font-size: var(--font-size-title);
-  font-weight: 700;
-  max-width: 760px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -.5px;
+  line-height: .97;
   padding: 20px;
+  margin-bottom: 20px;
 }
 
 .trajectory {
@@ -40,14 +43,14 @@
 
 .traj-title {
   font-family: 'Literata';
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 700;
   margin-bottom: 6px;
   letter-spacing: 1px;
 }
 
 .traj-desc {
-  font-size: 13px;
+  font-size: 16px;
   line-height: 1.75;
   opacity: .65;
   max-width: 520px;
